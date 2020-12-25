@@ -6,7 +6,7 @@ namespace proizvedenie_kubov
     {
         static void Main(string[] args)
         {
-
+//базовый
             int[] Arr = { 1, 2, 3 };
             int Pow = 3;
 
