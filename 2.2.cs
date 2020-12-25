@@ -8,6 +8,7 @@ namespace _2._2
         {
             try
             {
+                //базовый
                 Console.Write("Введите текущий час:");
                 uint x = uint.Parse(Console.ReadLine());
                 if (x >= 0 && x <= 12) Console.WriteLine(x + "am");
