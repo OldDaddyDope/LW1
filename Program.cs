@@ -1,22 +1,23 @@
 ﻿using System;
 
-namespace _2._1
+namespace proizvedenie_kubov
 {
     class Program
     {
         static void Main(string[] args)
         {
-            try
+
+            int[] Arr = { 1, 2, 3 };
+            int Pow = 3;
+
+            double Multiply = 1;
+
+            for (int i = 0; i < Arr.Length; i++)
             {
-                Console.Write("Введите x:");
-                uint x = uint.Parse(Console.ReadLine());
-                if (x > 3 || x < -1) Console.WriteLine("выражение истинно");
-                else Console.WriteLine("выражение неистенно");
+                Console.WriteLine($"Куб числа {Arr[i]} = {Math.Pow(Arr[i], Pow)}");
+                Multiply *= Math.Pow(Arr[i], Pow);
             }
-            catch (Exception e)
-            {
-                Console.WriteLine(e.Message);
-            }
+            Console.WriteLine($"Произведение кубов чисел = {Multiply}");
         }
     }
 }
