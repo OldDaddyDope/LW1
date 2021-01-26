@@ -1,22 +1,19 @@
 ﻿using System;
 
-namespace _2._1
+namespace ооп2
 {
-    class Program
+    internal class Program
     {
         static void Main(string[] args)
+      
+            struct Pair
         {
-            try
+            int first, second;
+            void multiply(int a)
             {
-                Console.Write("Введите x:");
-                uint x = uint.Parse(Console.ReadLine());
-                if (x > 3 || x < -1) Console.WriteLine("выражение истинно");
-                else Console.WriteLine("выражение неистенно");
+                first *= a;
             }
-            catch (Exception e)
-            {
-                Console.WriteLine(e.Message);
-            }
-        }
+         };
+    }
     }
 }
